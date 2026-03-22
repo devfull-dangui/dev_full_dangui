@@ -121,16 +121,16 @@ footer {
 
 /* --- ESTILO DA SEÇÃO DE CONTATO --- */
 #contato {
-  width: 90%; /* Use 90% para ter uma margem nas laterais no celular */
-  max-width: 500px;
-  margin: 2rem auto; /* Diminuí a margem no topo para mobile */
+  width: 95%; /* Quase a tela toda no celular */
+  max-width: 500px; /* Mas não passa de 500px no computador */
+  margin: 2rem auto; /* O 'auto' nas laterais é o que centraliza o bloco */
   padding: 1.5rem;
-  box-sizing: border-box; /* ESSENCIAL: Faz o padding ficar DENTRO dos 90% */
   background-color: #1e1e1e;
   border-radius: 15px;
   border: 1px solid #14032c;
   color: white;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: block; /* Garante que ele se comporte como um bloco centralizável */
 }
 
 #contato h2 {
@@ -144,6 +144,7 @@ footer {
   gap: 1.2rem;
   text-align: left;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .campo {
