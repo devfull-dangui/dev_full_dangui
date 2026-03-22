@@ -1,0 +1,218 @@
+/* Configuração para o rodapé ficar sempre embaixo */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden; /* Evita barras de rolagem estranhas durante animações */
+}
+
+header {
+  background-color: #14032c;
+  color: white;
+  padding: 3rem 1rem;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer {
+  background-color: #14032c;
+  color: white;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+}
+
+/* --- ESTILO DOS CARTÕES --- */
+.cartao-instagram, .cartao-tiktok, .cartao-youtube, .cartao-linkedin {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0; /* Começa invisível para a animação */
+}
+
+/* Efeito de hover */
+.cartao-instagram:hover, .cartao-tiktok:hover, 
+.cartao-youtube:hover, .cartao-linkedin:hover {
+  transform: scale(1.05) translateY(-5px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Cores e Ícones */
+.cartao-instagram { background-color: #2b0310; }
+.cartao-instagram i { color: #ff2e7a; font-size: 1.8rem; }
+
+.cartao-tiktok { background-color: #0a0a0a; }
+.cartao-tiktok i { color: #25f4ee; font-size: 1.8rem; }
+
+.cartao-youtube { background-color: #1e0d0d; }
+.cartao-youtube i { color: #ff0000; font-size: 1.8rem; }
+
+.cartao-linkedin { background-color: #0a1c2c; }
+.cartao-linkedin i { color: #0e76a8; font-size: 1.8rem; }
+
+.info { text-align: left; }
+.texto-pequeno { font-size: 0.8rem; margin: 0; opacity: 0.8; }
+.user { font-size: 1rem; font-weight: bold; margin: 0; color: #ff90b3; }
+
+/* --- ANIMAÇÕES --- */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animar {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Atrasos para o efeito cascata */
+.animar:nth-child(1) { animation-delay: 0.2s; }
+.animar:nth-child(2) { animation-delay: 0.4s; }
+.animar:nth-child(3) { animation-delay: 0.6s; }
+.animar:nth-child(4) { animation-delay: 0.8s; }
+
+/* --- RESPONSIVIDADE --- */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+  }
+  .cartao-instagram, .cartao-tiktok, .cartao-youtube, .cartao-linkedin {
+    flex: 1 1 300px;
+  }
+}
+
+/* --- ESTILO DA SEÇÃO DE CONTATO --- */
+#contato {
+  width: 100%;
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #1e1e1e; /* Um pouco mais claro que o fundo para dar destaque */
+  border-radius: 15px;
+  border: 1px solid #14032c;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#contato h2 {
+  color: #ff90b3;
+  margin-bottom: 0.5rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.campo label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ff90b3;
+}
+
+/* Estilo dos Inputs, Select e Textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  background-color: #272727;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 0.8rem;
+  color: white;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #ff2e7a;
+  box-shadow: 0 0 5px rgba(255, 46, 122, 0.5);
+}
+
+/* Estilo específico para o Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+/* Botão Enviar (seguindo o estilo dos cartões) */
+.btn-enviar {
+  background-color: #2b0310;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-enviar:hover {
+  background-color: #77092c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 46, 122, 0.4);
+}
+
+.contato-direto {
+  margin-top: 2rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+.contato-direto a {
+  color: #25f4ee;
+  text-decoration: none;
+}
+
+.contato-direto a:hover {
+  text-decoration: underline;
+}
