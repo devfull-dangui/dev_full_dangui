@@ -27,11 +27,12 @@ header {
 
 main {
   flex: 1;
-  padding: 2rem 1rem;
+  padding: 2rem 0; /* Removi o padding lateral daqui para evitar somas de largura */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  width: 100%; /* Força o main a ocupar a tela toda */
 }
 
 footer {
@@ -121,16 +122,18 @@ footer {
 
 /* --- ESTILO DA SEÇÃO DE CONTATO --- */
 #contato {
-  width: 95%; /* Quase a tela toda no celular */
-  max-width: 500px; /* Mas não passa de 500px no computador */
-  margin: 2rem auto; /* O 'auto' nas laterais é o que centraliza o bloco */
+  display: block;
+  width: 90%; 
+  max-width: 500px;
+  margin-left: auto !important; /* O !important garante que nada sobressaia */
+  margin-right: auto !important;
   padding: 1.5rem;
+  box-sizing: border-box; /* Isso impede que o padding empurre o bloco para fora */
   background-color: #1e1e1e;
   border-radius: 15px;
   border: 1px solid #14032c;
   color: white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  display: block; /* Garante que ele se comporte como um bloco centralizável */
+  text-align: center; /* Centraliza o título e o texto interno */
 }
 
 #contato h2 {
