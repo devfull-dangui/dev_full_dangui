@@ -119,11 +119,12 @@ footer {
 
 /* --- ESTILO DA SEÇÃO DE CONTATO --- */
 #contato {
-  width: 100%;
+  width: 90%; /* Use 90% para ter uma margem nas laterais no celular */
   max-width: 500px;
-  margin: 4rem auto;
-  padding: 2rem;
-  background-color: #1e1e1e; /* Um pouco mais claro que o fundo para dar destaque */
+  margin: 2rem auto; /* Diminuí a margem no topo para mobile */
+  padding: 1.5rem;
+  box-sizing: border-box; /* ESSENCIAL: Faz o padding ficar DENTRO dos 90% */
+  background-color: #1e1e1e;
   border-radius: 15px;
   border: 1px solid #14032c;
   color: white;
