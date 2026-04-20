@@ -15,7 +15,7 @@ Este é o meu primeiro projeto de portfólio totalmente responsivo, desenvolvido
 - [x] Links integrados com abertura em nova guia.
 
 ## 🔗 Link do Projeto
-Você pode acessar o site ao vivo aqui: [CLIQUE AQUI PARA VER O SITE](https://seu-usuario.github.io/nome-do-seu-repositorio/)
+Você pode acessar o site ao vivo aqui: [CLIQUE AQUI PARA VER O SITE](https://devfull-dangui.github.io/devfull-dangui/)
 
 ---
 Feito por Deborah Dangui.
