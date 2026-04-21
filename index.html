@@ -3,142 +3,819 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deborah Dangui | devfull-dangui</title>
+    <title>Deborah Dangui | Desenvolvedora Full Stack</title>
     <meta
       name="description"
-      content="Quer um site que chame a atenção para a sua empresa? Entre em contato comigo."
+      content="website de Deborah Dangui — desenvolvedora web full stack criando sites que geram resultado para o seu negócio."
     />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Deborah Dangui" />
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Deborah Dangui | devfull-dangui" />
+    <meta
+      property="og:title"
+      content="Deborah Dangui | Desenvolvedora Full Stack"
+    />
     <meta
       property="og:description"
-      content="Quer um site que chame a atenção para a sua empresa? Entre em contato comigo."
+      content="website de Deborah Dangui — desenvolvedora web full stack criando sites que geram resultado para o seu negócio."
     />
-    <meta property="og:image" content="https://github.com/devfull-dangui" />
+    <meta
+      property="og:image"
+      content="https://devfull-dangui.github.io/dev_full_dangui/og-image.png"
+    />
     <meta
       property="og:url"
       content="https://devfull-dangui.github.io/dev_full_dangui/"
     />
-    <link rel="stylesheet" href="style.css" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Deborah Dangui | Desenvolvedora Full Stack"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfólio de Deborah Dangui — desenvolvedora web full stack."
+    />
+
+    <!-- Canonical -->
+    <link
+      rel="canonical"
+      href="https://devfull-dangui.github.io/dev_full_dangui/"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <h1>Deborah Dangui</h1>
-      <p>
-        Quer um site que chame a atenção para sua empresa? Entre em contato
-        comigo.
-      </p>
-    </header>
+    <!-- ===== NAVBAR ===== -->
+    <nav
+      class="navbar"
+      id="navbar"
+      role="navigation"
+      aria-label="Navegação principal"
+    >
+      <div class="nav-container">
+        <a href="#inicio" class="nav-logo" aria-label="Voltar ao topo">
+          <span class="logo-d">D</span>angui
+        </a>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu" role="list">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#redes" class="nav-link">Redes</a></li>
+          <li><a href="#contato" class="nav-link nav-cta">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <main>
-      <div class="cartao-instagram animar" id="btn-instagram">
-        <i class="fab fa-instagram"></i>
-        <div class="info">
-          <p class="texto-pequeno">Me siga no Instagram</p>
-          <p class="user">@devfull.dangui</p>
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero" aria-label="Apresentação">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal">Desenvolvedora Full Stack</p>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Deborah<br /><em>Dangui</em>
+        </h1>
+        <p class="hero-subtitle reveal reveal-delay-2">
+          Transformo ideias em experiências digitais que encantam e convertem.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn btn-outline">Fale comigo</a>
         </div>
       </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-      <div class="cartao-tiktok animar" id="btn-tiktok">
-        <i class="fab fa-tiktok"></i>
-        <div class="info">
-          <p class="texto-pequeno">Me siga no TikTok</p>
-          <p class="user">@devfull.dangui</p>
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="section" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Quem sou eu</span>
+          <h2 id="sobre-titulo" class="section-title">Sobre mim</h2>
+        </div>
+        <div class="sobre-grid">
+          <div class="sobre-avatar reveal">
+            <div class="avatar-frame">
+              <img
+                src="og-image.png"
+                alt="Foto de Deborah Dangui"
+                class="avatar-foto"
+              />
+              <div class="avatar-ring" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="sobre-texto reveal reveal-delay-1">
+            <p class="sobre-destaque">
+              Olá! Sou a <strong>Deborah Dangui</strong>, desenvolvedora web
+              apaixonada por criar experiências digitais que realmente
+              funcionam.
+            </p>
+            <p>
+              Trabalho com desenvolvimento front-end e back-end, unindo design e
+              tecnologia para entregar soluções que colocam o seu negócio na
+              internet de forma profissional e estratégica.
+            </p>
+            <p>
+              Sou criadora de conteúdo sobre programação no Instagram, TikTok e
+              YouTube — compartilhando minha jornada e aprendizados com uma
+              comunidade de devs em crescimento.
+            </p>
+            <div class="sobre-stats" aria-label="Estatísticas">
+              <div class="stat">
+                <span class="stat-num">+20</span>
+                <span class="stat-label">Projetos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Anos de experiência</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Dedicação</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="cartao-youtube animar" id="btn-youtube">
-        <i class="fab fa-youtube"></i>
-        <div class="info">
-          <p class="texto-pequeno">Se inscreva no YouTube</p>
-          <p class="user">@devfull.dangui</p>
+    <!-- ===== SKILLS ===== -->
+    <section
+      id="skills"
+      class="section section-alt"
+      aria-labelledby="skills-titulo"
+    >
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">O que eu domino</span>
+          <h2 id="skills-titulo" class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal" style="--delay: 0.1s">
+            <div class="skill-icon" aria-hidden="true">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              aria-valuenow="95"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Nível de HTML5: 95%"
+            >
+              <div class="skill-fill" style="--pct: 95%"></div>
+            </div>
+            <span class="skill-pct">95%</span>
+          </article>
+          <article class="skill-card reveal" style="--delay: 0.2s">
+            <div class="skill-icon" aria-hidden="true">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Nível de CSS3: 90%"
+            >
+              <div class="skill-fill" style="--pct: 90%"></div>
+            </div>
+            <span class="skill-pct">90%</span>
+          </article>
+          <article class="skill-card reveal" style="--delay: 0.3s">
+            <div class="skill-icon" aria-hidden="true">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Nível de JavaScript: 85%"
+            >
+              <div class="skill-fill" style="--pct: 85%"></div>
+            </div>
+            <span class="skill-pct">85%</span>
+          </article>
+          <article class="skill-card reveal" style="--delay: 0.4s">
+            <div class="skill-icon" aria-hidden="true">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3 class="skill-name">React</h3>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              aria-valuenow="78"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Nível de React: 78%"
+            >
+              <div class="skill-fill" style="--pct: 78%"></div>
+            </div>
+            <span class="skill-pct">78%</span>
+          </article>
+          <article class="skill-card reveal" style="--delay: 0.5s">
+            <div class="skill-icon" aria-hidden="true">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3 class="skill-name">Node.js</h3>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Nível de Node.js: 75%"
+            >
+              <div class="skill-fill" style="--pct: 75%"></div>
+            </div>
+            <span class="skill-pct">75%</span>
+          </article>
+          <article class="skill-card reveal" style="--delay: 0.6s">
+            <div class="skill-icon" aria-hidden="true">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3 class="skill-name">Git & GitHub</h3>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              aria-valuenow="88"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Nível de Git e GitHub: 88%"
+            >
+              <div class="skill-fill" style="--pct: 88%"></div>
+            </div>
+            <span class="skill-pct">88%</span>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="cartao-linkedin animar" id="btn-linkedin">
-        <i class="fab fa-linkedin"></i>
-        <div class="info">
-          <p class="texto-pequeno">Conecte-se no LinkedIn</p>
-          <p class="user">devfull.dangui</p>
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="section" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">O que já fiz</span>
+          <h2 id="projetos-titulo" class="section-title">Projetos</h2>
+        </div>
+        <div class="projetos-grid">
+          <article class="projeto-card reveal" style="--delay: 0.1s">
+            <div class="projeto-thumb" aria-hidden="true">
+              <div class="projeto-thumb-bg projeto-1"></div>
+              <div class="projeto-thumb-icon"><i class="fas fa-globe"></i></div>
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">Landing Page</span>
+              <h3 class="projeto-nome">Site Institucional</h3>
+              <p class="projeto-desc">
+                Landing page responsiva para empresa de serviços com foco em
+                conversão.
+              </p>
+              <div class="projeto-techs" aria-label="Tecnologias usadas">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="projeto-links">
+                <a
+                  href="#"
+                  class="projeto-link"
+                  aria-label="Ver demonstração do projeto Site Institucional"
+                >
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/devfull-dangui"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projeto-link"
+                  aria-label="Ver código no GitHub"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projeto-card reveal" style="--delay: 0.2s">
+            <div class="projeto-thumb" aria-hidden="true">
+              <div class="projeto-thumb-bg projeto-2"></div>
+              <div class="projeto-thumb-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">E-commerce</span>
+              <h3 class="projeto-nome">Loja Online</h3>
+              <p class="projeto-desc">
+                Catálogo de produtos com carrinho funcional e integração de
+                pagamento.
+              </p>
+              <div class="projeto-techs" aria-label="Tecnologias usadas">
+                <span>React</span><span>Node.js</span><span>CSS</span>
+              </div>
+              <div class="projeto-links">
+                <a
+                  href="#"
+                  class="projeto-link"
+                  aria-label="Ver demonstração do projeto Loja Online"
+                >
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/devfull-dangui"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projeto-link"
+                  aria-label="Ver código no GitHub"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projeto-card reveal" style="--delay: 0.3s">
+            <div class="projeto-thumb" aria-hidden="true">
+              <div class="projeto-thumb-bg projeto-3"></div>
+              <div class="projeto-thumb-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">Dashboard</span>
+              <h3 class="projeto-nome">Painel Administrativo</h3>
+              <p class="projeto-desc">
+                Dashboard com gráficos, métricas e gestão de conteúdo em tempo
+                real.
+              </p>
+              <div class="projeto-techs" aria-label="Tecnologias usadas">
+                <span>React</span><span>Chart.js</span><span>API</span>
+              </div>
+              <div class="projeto-links">
+                <a
+                  href="#"
+                  class="projeto-link"
+                  aria-label="Ver demonstração do projeto Painel Administrativo"
+                >
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/devfull-dangui"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projeto-link"
+                  aria-label="Ver código no GitHub"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <section id="contato" class="animar">
-        <h2>Contato</h2>
-        <p>Tem um projeto em mente? Entre em contato.</p>
+    <!-- ===== REDES SOCIAIS ===== -->
+    <section
+      id="redes"
+      class="section section-alt"
+      aria-labelledby="redes-titulo"
+    >
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Me encontre</span>
+          <h2 id="redes-titulo" class="section-title">Redes Sociais</h2>
+        </div>
+        <div class="redes-grid">
+          <a
+            href="https://www.instagram.com/devfull.dangui/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cartao-rede cartao-instagram reveal"
+            style="--delay: 0.1s"
+            aria-label="Me siga no Instagram @devfull.dangui"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <div class="rede-info">
+              <p class="rede-label">Me siga no Instagram</p>
+              <p class="rede-user">@devfull.dangui</p>
+            </div>
+            <i class="fas fa-arrow-right rede-arrow" aria-hidden="true"></i>
+          </a>
 
-        <form action="#" class="formulario">
-          <div class="campo">
-            <label for="nome">Nome:</label>
+          <a
+            href="https://www.tiktok.com/@devfull.dangui"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cartao-rede cartao-tiktok reveal"
+            style="--delay: 0.2s"
+            aria-label="Me siga no TikTok @devfull.dangui"
+          >
+            <i class="fab fa-tiktok" aria-hidden="true"></i>
+            <div class="rede-info">
+              <p class="rede-label">Me siga no TikTok</p>
+              <p class="rede-user">@devfull.dangui</p>
+            </div>
+            <i class="fas fa-arrow-right rede-arrow" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@devfull.dangui"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cartao-rede cartao-youtube reveal"
+            style="--delay: 0.3s"
+            aria-label="Se inscreva no YouTube @devfull.dangui"
+          >
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+            <div class="rede-info">
+              <p class="rede-label">Se inscreva no YouTube</p>
+              <p class="rede-user">@devfull.dangui</p>
+            </div>
+            <i class="fas fa-arrow-right rede-arrow" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/devfull-dangui/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cartao-rede cartao-linkedin reveal"
+            style="--delay: 0.4s"
+            aria-label="Conecte-se no LinkedIn devfull.dangui"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            <div class="rede-info">
+              <p class="rede-label">Conecte-se no LinkedIn</p>
+              <p class="rede-user">devfull.dangui</p>
+            </div>
+            <i class="fas fa-arrow-right rede-arrow" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="section" aria-labelledby="contato-titulo">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Vamos trabalhar juntos</span>
+          <h2 id="contato-titulo" class="section-title">Contato</h2>
+          <p class="section-desc">Tem um projeto em mente? Conta pra mim!</p>
+        </div>
+
+        <div class="contato-wrapper reveal">
+          <!-- AVISO LGPD -->
+          <div class="lgpd-aviso" role="note" aria-label="Aviso de privacidade">
+            <i class="fas fa-shield-halved" aria-hidden="true"></i>
+            <p>
+              Seus dados são protegidos conforme a
+              <a href="lgpd.html" class="lgpd-link">Política de Privacidade</a>
+              e a
+              <abbr title="Lei Geral de Proteção de Dados Pessoais">LGPD</abbr>
+              (Lei nº 13.709/2018). Utilizados apenas para responder à sua
+              mensagem.
+            </p>
+          </div>
+
+          <!-- FORMULÁRIO — action substituir pelo endpoint do Formspree -->
+          <form
+            id="formulario-contato"
+            action="https://formspree.io/f/mzdyaqpk"
+            method="POST"
+            class="formulario"
+            novalidate
+            aria-label="Formulário de contato"
+          >
+            <!-- Campo anti-spam honeypot (LGPD: não coletamos dados ocultos relevantes) -->
             <input
               type="text"
-              id="nome"
-              name="nome"
-              placeholder="Seu nome completo"
-              required
+              name="_gotcha"
+              style="display: none"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
             />
-          </div>
-
-          <div class="campo">
-            <label for="email">E-mail:</label>
+            <!-- Redirecionar após envio -->
             <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="seu@email.com"
-              required
+              type="hidden"
+              name="_next"
+              value="https://devfull-dangui.github.io/dev_full_dangui/?enviado=true"
             />
-          </div>
-
-          <div class="campo">
-            <label for="telefone">Telefone:</label>
             <input
-              type="tel"
-              id="telefone"
-              name="telefone"
-              placeholder="(00) 00000-0000"
+              type="hidden"
+              name="_subject"
+              value="Nova mensagem do portfólio — Deborah Dangui"
             />
+            <input type="hidden" name="_language" value="pt" />
+
+            <div class="form-row">
+              <div class="campo">
+                <label for="nome"
+                  >Nome completo
+                  <span class="obrig" aria-label="campo obrigatório"
+                    >*</span
+                  ></label
+                >
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Seu nome"
+                  required
+                  autocomplete="name"
+                />
+                <span
+                  class="erro-msg"
+                  id="erro-nome"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+              <div class="campo">
+                <label for="email"
+                  >E-mail
+                  <span class="obrig" aria-label="campo obrigatório"
+                    >*</span
+                  ></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="seu@email.com"
+                  required
+                  autocomplete="email"
+                />
+                <span
+                  class="erro-msg"
+                  id="erro-email"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="campo">
+                <label for="telefone"
+                  >Telefone <span class="opcional">(opcional)</span></label
+                >
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(00) 00000-0000"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="campo">
+                <label for="assunto"
+                  >Assunto
+                  <span class="obrig" aria-label="campo obrigatório"
+                    >*</span
+                  ></label
+                >
+                <select name="assunto" id="assunto" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="orcamento">Orçamento</option>
+                  <option value="duvida">Dúvida</option>
+                  <option value="parceria">Parceria</option>
+                  <option value="outro">Outro</option>
+                </select>
+                <span
+                  class="erro-msg"
+                  id="erro-assunto"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="mensagem"
+                >Mensagem
+                <span class="obrig" aria-label="campo obrigatório"
+                  >*</span
+                ></label
+              >
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                rows="5"
+                placeholder="Conte sobre o seu projeto..."
+                required
+              ></textarea>
+              <span
+                class="erro-msg"
+                id="erro-mensagem"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <!-- Consentimento LGPD explícito -->
+            <div class="campo-check">
+              <input
+                type="checkbox"
+                id="consentimento"
+                name="consentimento"
+                required
+              />
+              <label for="consentimento">
+                Li e concordo com a
+                <a href="lgpd.html" class="lgpd-link" target="_blank"
+                  >Política de Privacidade</a
+                >
+                e autorizo o uso dos meus dados para contato.
+                <span class="obrig" aria-label="campo obrigatório">*</span>
+              </label>
+              <span
+                class="erro-msg"
+                id="erro-consentimento"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <!-- Newsletter com consentimento separado (LGPD: granularidade) -->
+            <div class="campo-check">
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="sim"
+              />
+              <label for="newsletter">
+                Quero receber novidades e conteúdos sobre desenvolvimento web
+                por e-mail.
+                <span class="opcional">(opcional)</span>
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary btn-block"
+              id="btn-enviar"
+            >
+              <span class="btn-texto">Enviar mensagem</span>
+              <span
+                class="btn-loading"
+                aria-hidden="true"
+                style="display: none"
+              >
+                <i class="fas fa-circle-notch fa-spin"></i> Enviando...
+              </span>
+            </button>
+          </form>
+
+          <!-- Mensagem de sucesso -->
+          <div
+            class="form-sucesso"
+            id="form-sucesso"
+            role="status"
+            aria-live="polite"
+            style="display: none"
+          >
+            <i class="fas fa-circle-check" aria-hidden="true"></i>
+            <h3>Mensagem enviada!</h3>
+            <p>Obrigada pelo contato. Responderei em breve.</p>
+            <button class="btn btn-outline" id="btn-nova-msg">
+              Enviar outra mensagem
+            </button>
           </div>
 
-          <div class="campo">
-            <label for="assunto">Assunto:</label>
-            <select name="assunto" id="assunto">
-              <option value="orcamento">Orçamento</option>
-              <option value="duvida">Dúvida</option>
-              <option value="outro">Outro</option>
-            </select>
+          <!-- Mensagem de erro -->
+          <div
+            class="form-erro-geral"
+            id="form-erro-geral"
+            role="alert"
+            aria-live="assertive"
+            style="display: none"
+          >
+            <i class="fas fa-triangle-exclamation" aria-hidden="true"></i>
+            <p>
+              Ocorreu um erro ao enviar. Tente novamente ou entre em contato por
+              <a href="mailto:devfull.dangui@gmail.com"
+                >devfull.dangui@gmail.com</a
+              >.
+            </p>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="campo">
-            <label for="mensagem">Mensagem:</label>
-            <textarea
-              name="mensagem"
-              id="mensagem"
-              rows="4"
-              placeholder="Como posso te ajudar?"
-              required
-            ></textarea>
-          </div>
-
-          <div class="checkbox-container">
-            <input type="checkbox" id="inscricao" name="inscricao" />
-            <label for="inscricao">Deseja receber minha newsletter?</label>
-          </div>
-
-          <button type="submit" class="btn-enviar">Enviar mensagem</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2026 - Feito por Deborah - devfull.dangui@gmail.com</p>
+    <!-- ===== FOOTER ===== -->
+    <footer role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-top">
+          <p class="footer-logo"><span class="logo-d">D</span>angui</p>
+          <p class="footer-desc">
+            Desenvolvendo com propósito, entregando com qualidade.
+          </p>
+          <nav class="footer-redes" aria-label="Redes sociais">
+            <a
+              href="https://www.instagram.com/devfull.dangui/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@devfull.dangui"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              ><i class="fab fa-tiktok" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@devfull.dangui"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              ><i class="fab fa-youtube" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/devfull-dangui/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://github.com/devfull-dangui"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><i class="fab fa-github" aria-hidden="true"></i
+            ></a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Deborah Dangui —
+            <a href="mailto:devfull.dangui@gmail.com"
+              >devfull.dangui@gmail.com</a
+            >
+          </p>
+          <nav aria-label="Links legais">
+            <a href="lgpd.html">Política de Privacidade</a>
+          </nav>
+        </div>
+      </div>
     </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button
+      class="btn-topo"
+      id="btn-topo"
+      aria-label="Voltar ao topo da página"
+      title="Voltar ao topo"
+    >
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>
