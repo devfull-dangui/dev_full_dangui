@@ -1240,22 +1240,22 @@ footer {
 }
 
 .hero-rede-btn.instagram   { background: #2b0310; border-color: #ff2e7a; }
-.hero-rede-btn.instagram i { color: #ff2e7a; font-size: 1.5rem; }
+.hero-rede-btn.instagram i { color: #ff2e7a; font-size: 1.0rem; }
 .hero-rede-btn.instagram:hover   { background: #ff2e7a; transform: translateY(-5px) scale(1.1); }
 .hero-rede-btn.instagram:hover i { color: white; }
 
 .hero-rede-btn.tiktok   { background: #0a0a0a; border-color: #25f4ee; }
-.hero-rede-btn.tiktok i { color: #25f4ee; font-size: 1.5rem; }
+.hero-rede-btn.tiktok i { color: #25f4ee; font-size: 1.0rem; }
 .hero-rede-btn.tiktok:hover   { background: #25f4ee; transform: translateY(-5px) scale(1.1); }
 .hero-rede-btn.tiktok:hover i { color: #0a0a0a; }
 
 .hero-rede-btn.youtube   { background: #1e0d0d; border-color: #ff0000; }
-.hero-rede-btn.youtube i { color: #ff0000; font-size: 1.5rem; }
+.hero-rede-btn.youtube i { color: #ff0000; font-size: 1.0rem; }
 .hero-rede-btn.youtube:hover   { background: #ff0000; transform: translateY(-5px) scale(1.1); }
 .hero-rede-btn.youtube:hover i { color: white; }
 
 .hero-rede-btn.linkedin   { background: #0a1c2c; border-color: #0e76a8; }
-.hero-rede-btn.linkedin i { color: #0e76a8; font-size: 1.5rem; }
+.hero-rede-btn.linkedin i { color: #0e76a8; font-size: 1.0rem; }
 .hero-rede-btn.linkedin:hover   { background: #0e76a8; transform: translateY(-5px) scale(1.1); }
 .hero-rede-btn.linkedin:hover i { color: white; }
 
@@ -1267,14 +1267,7 @@ footer {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5) !important;
 }
 
-.hero-rede-btn.instagram:hover   { background: #ff2e7a !important; }
-.hero-rede-btn.instagram:hover i { color: white !important; }
-
-.hero-rede-btn.tiktok:hover   { background: #25f4ee !important; }
-.hero-rede-btn.tiktok:hover i { color: #0a0a0a !important; }
-
-.hero-rede-btn.youtube:hover   { background: #ff0000 !important; }
-.hero-rede-btn.youtube:hover i { color: white !important; }
-
-.hero-rede-btn.linkedin:hover   { background: #0e76a8 !important; }
-.hero-rede-btn.linkedin:hover i { color: white !important; }
+.hero-rede-btn.instagram { background: linear-gradient(135deg, #14032c, #2b0a3d); border-color: #ff2e7a; }
+.hero-rede-btn.tiktok    { background: linear-gradient(135deg, #14032c, #2b0a3d); border-color: #25f4ee; }
+.hero-rede-btn.youtube   { background: linear-gradient(135deg, #14032c, #2b0a3d); border-color: #ff0000; }
+.hero-rede-btn.linkedin  { background: linear-gradient(135deg, #14032c, #2b0a3d); border-color: #0e76a8; }
