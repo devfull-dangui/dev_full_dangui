@@ -1216,3 +1216,50 @@ footer {
 .grecaptcha-badge {
   visibility: hidden;
 }
+
+/* ===== REDES SOCIAIS NO HERO ===== */
+.hero-redes {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-rede-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.hero-rede-btn:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.hero-rede-btn.instagram { background-color: #2b0310; border-color: #ff2e7a; }
+.hero-rede-btn.instagram i { color: #ff2e7a; }
+.hero-rede-btn.instagram:hover { background-color: #ff2e7a; }
+.hero-rede-btn.instagram:hover i { color: white; }
+
+.hero-rede-btn.tiktok { background-color: #0a0a0a; border-color: #25f4ee; }
+.hero-rede-btn.tiktok i { color: #25f4ee; }
+.hero-rede-btn.tiktok:hover { background-color: #25f4ee; }
+.hero-rede-btn.tiktok:hover i { color: #0a0a0a; }
+
+.hero-rede-btn.youtube { background-color: #1e0d0d; border-color: #ff0000; }
+.hero-rede-btn.youtube i { color: #ff0000; }
+.hero-rede-btn.youtube:hover { background-color: #ff0000; }
+.hero-rede-btn.youtube:hover i { color: white; }
+
+.hero-rede-btn.linkedin { background-color: #0a1c2c; border-color: #0e76a8; }
+.hero-rede-btn.linkedin i { color: #0e76a8; }
+.hero-rede-btn.linkedin:hover { background-color: #0e76a8; }
+.hero-rede-btn.linkedin:hover i { color: white; }
