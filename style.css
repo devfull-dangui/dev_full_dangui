@@ -1211,3 +1211,8 @@ footer {
   text-underline-offset: 2px;
 }
 .recaptcha-aviso a:hover { color: var(--rosa-claro); }
+
+/* reCAPTCHA — oculto visualmente (aviso de texto já presente no formulário) */
+.grecaptcha-badge {
+  visibility: hidden;
+}
