@@ -1183,3 +1183,31 @@ footer {
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+/* ===== ADIÇÕES v2 — não alteram o design original ===== */
+
+/* Foto redonda no Sobre */
+.avatar-foto {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--borda-rosa);
+  display: block;
+}
+
+/* Aviso reCAPTCHA abaixo do botão enviar */
+.recaptcha-aviso {
+  font-size: 0.72rem;
+  color: var(--texto-3);
+  text-align: center;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+.recaptcha-aviso a {
+  color: var(--texto-3);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.recaptcha-aviso a:hover { color: var(--rosa-claro); }

@@ -1,0 +1,12 @@
+# robots.txt — devfull-dangui.com
+# Atualizado: 2026-05-21
+
+# Permite todos os buscadores indexarem o site
+User-agent: *
+Allow: /
+
+# Não indexar a página de política de privacidade
+Disallow: /lgpd.html
+
+# Localização do sitemap
+Sitemap: https://devfull-dangui.com/sitemap.xml
