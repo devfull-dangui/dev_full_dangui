@@ -1258,3 +1258,23 @@ footer {
 .hero-rede-btn.linkedin i { color: #0e76a8; font-size: 1.5rem; }
 .hero-rede-btn.linkedin:hover   { background: #0e76a8; transform: translateY(-5px) scale(1.1); }
 .hero-rede-btn.linkedin:hover i { color: white; }
+
+.hero-rede-btn.instagram:hover,
+.hero-rede-btn.tiktok:hover,
+.hero-rede-btn.youtube:hover,
+.hero-rede-btn.linkedin:hover {
+  transform: translateY(-5px) scale(1.1) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-rede-btn.instagram:hover   { background: #ff2e7a !important; }
+.hero-rede-btn.instagram:hover i { color: white !important; }
+
+.hero-rede-btn.tiktok:hover   { background: #25f4ee !important; }
+.hero-rede-btn.tiktok:hover i { color: #0a0a0a !important; }
+
+.hero-rede-btn.youtube:hover   { background: #ff0000 !important; }
+.hero-rede-btn.youtube:hover i { color: white !important; }
+
+.hero-rede-btn.linkedin:hover   { background: #0e76a8 !important; }
+.hero-rede-btn.linkedin:hover i { color: white !important; }
