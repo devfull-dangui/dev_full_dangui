@@ -1,0 +1,10 @@
+# Ignorar pastas de dependências ou builds
+node_modules/
+build/
+npm-debug.log*
+
+# Ignorar variáveis de ambiente
+.env
+
+# Ignorar logs
+*.log
