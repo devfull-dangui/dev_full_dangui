@@ -348,7 +348,7 @@ ul {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--rosa);
-  margin-bottom: 0.4rem;
+  margin-bottom: 4rem;
 }
 
 .hero-title {
@@ -356,7 +356,7 @@ ul {
   font-weight: 700;
   color: var(--texto);
   line-height: 1;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .hero-title em {
