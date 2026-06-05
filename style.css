@@ -336,6 +336,10 @@ ul {
   position: relative;
   z-index: 1;
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .hero-eyebrow {
@@ -348,7 +352,7 @@ ul {
 }
 
 .hero-title {
-  font-size: clamp(3.5rem, 10vw, 8rem);
+  font-size: clamp(3.5rem, 8vw, 8rem);
   font-weight: 900;
   color: var(--texto);
   line-height: 1;
